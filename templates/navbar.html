@@ -1,0 +1,211 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Resume - Samson Chapuramhuka</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
+  <link href="{% static 'vendor/fontawesome-free/css/all.min.css' %}" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="{% static 'css/resume.min.css' %}" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+<! start of nav bar!>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+    <a class="navbar-brand js-scroll-trigger" href="#page-top">
+      <span class="d-block d-lg-none">Samson Chapuramhuka</span>
+      <span class="d-none d-lg-block">
+        <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="https://scontent.fhre1-1.fna.fbcdn.net/v/t1.0-9/s960x960/74599563_2220666648032783_3417609265311907840_o.jpg?_nc_cat=104&_nc_ohc=9iWlv2fQAQIAQmThdaI--YF5NGJW7KTCOjkoJRMmVsk8OrKfGrV4BOvtQ&_nc_ht=scontent.fhre1-1.fna&_nc_tp=1&oh=276f2947cff2e5803f59751b7d03a3b5&oe=5E93564C" alt="Samson's Photo">
+      </span>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="{% url 'about' %}">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="{% url 'experience' %}">Experience</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="{% url 'education' %}">Education</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="{% url 'skills' %}">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="{% url 'interests' %}">Interests</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="{% url 'family' %}">Family</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+<!end ov nav bar!>
+
+{% block content %}
+{% endblock %}
+    <hr class="m-0">
+
+    <section style="background-color:yellow" class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="experience">
+      <div class="w-100">
+        <h2 class="mb-5">Experience</h2>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0">Web Developer</h3>
+            <div class="subheading mb-3">Intermediate Solutions</div>
+            <p>Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going
+              forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud
+              solution.</p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">January 2019 - Present</span>
+          </div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0">Python Programmer</h3>
+            <div class="subheading mb-3">Coding</div>
+            <p>Great Python skills to solve challenging problems on top of best ability to identify problems within our
+              communities. Keeping my eye on the ball while performing a deep dive on Python modules to produce smart coded
+               applications.</p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">January 2019 - November 2019</span>
+          </div>
+        </div>
+	  </div>
+    </section>
+
+    <hr class="m-0">
+
+    <section style="background-color:red" class="resume-section p-3 p-lg-5 d-flex align-items-center" id="education">
+      <div class="w-100">
+        <h2 class="mb-5">Education</h2>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0">Zimbabwe Open University</h3>
+            <div class="subheading mb-3">Bachelor of Science</div>
+            <div>Network Computing(Second year/First Semester)</div>
+            <p>Year of Graduation: 2022</p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">August 2018 - present</span>
+          </div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
+          <div class="resume-content">
+            <h3 class="mb-0">Muzinda Hub, Econet Wireless(Treehouse, USA)</h3>
+            <div class="subheading mb-3">Programming Languages</div>
+            <ol>
+              <li>Beginning Python.</li>
+              <li>Intermediate Python.</li>
+              <li>Exploring Flask.</li>
+              <li>Beginning Java.</li>
+              <li>Beginning Data Analysis.</li>
+            </ol>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">January 2019 - November 2019</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <hr class="m-0">
+
+    <section style="background-color:blue" class="resume-section p-3 p-lg-5 d-flex align-items-center" id="skills">
+      <div class="w-100">
+        <h2 class="mb-5">Skills</h2>
+
+        <div class="subheading mb-3">Programming Languages &amp; Tools</div>
+          <li>
+            <i class="fa-li fa fa-check"></i>
+            Python Programming</li>
+          <li>
+            <i class="fa-li fa fa-check"></i>
+            Exploring Flask</li>
+        <li>
+            <i class="fa-li fa fa-check"></i>
+            Django</li>
+          <li> C Programming
+          <li>
+            <i class="fa-li fa fa-check"></i>
+            Java Programming</li>
+          <li>
+            <i class="fa-li fa fa-check"></i>
+            HTML & CSS</li>
+        <li>
+            <i class="fa-li fa fa-check"></i>
+            SQL</li>
+        <li>
+            <i class="fa-li fa fa-check"></i>
+            Database Design and Management</li>
+        </ul>
+      </div>
+    </section>
+
+    <hr class="m-0">
+
+    <section style="background-color:white" class="resume-section p-3 p-lg-5 d-flex align-items-center" id="interests">
+      <div class="w-100">
+        <h2 class="mb-5">Interests</h2>
+        <p>Apart from being a programmer, I enjoy watching or playing football, chess, cricket and tennis.</p>
+        <p class="mb-0">When forced indoors, I prefer listening to Reggae music. I rarely follow movies and television
+          shows but I spend a large amount of my free time exploring the latest technology advancements in the Python
+          programming and web development world.</p>
+      </div>
+    </section>
+
+    <hr class="m-0">
+
+    <section style="background-color:maroon" class="resume-section p-3 p-lg-5 d-flex align-items-center" id="family">
+      <div class="w-100">
+        <h2 class="mb-5">Family</h2>
+        <li>Married to Loveness Mutiwokuziwa</li>
+        <li>Children:</li><br>
+          <ol>
+            <li>Dalfrose Celine Chapuramhuka</li>
+            <li>Sammie Jayce Chapuramhuka</li>
+          </ol>
+       </div>
+    </section>
+
+    <hr class="m-0">
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/resume.min.js"></script>
+
+</body>
+
+</html>
